@@ -24,7 +24,7 @@ Open your terminal and connect to your EC2 instance:
 ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-dns
 
 
-##Step 2: Install Node.js and Apache
+#Step 2: Install Node.js and Apache
 Update Packages
 
 	sudo apt update
@@ -39,7 +39,7 @@ Install Apache
 	sudo apt install apache2 -y
 
 
-##Step 3: Create a React Application
+#Step 3: Create a React Application
 
 Install Create React App
 
@@ -59,7 +59,7 @@ Change into the project directory and build the app:
 cd my-app
 npm run build
 
-##Step 4: Configure Apache to Serve the React App
+#Step 4: Configure Apache to Serve the React App
 
 Copy Build Files to Apache Directory
 Copy the contents of the build directory to Apache's default root directory:
@@ -113,12 +113,12 @@ Restart Apache to apply the changes:
 sudo systemctl restart apache2
 
 
-##Step 5: Access Your React Application
+#Step 5: Access Your React Application	
 
 Get Your EC2 Public IP
 You can find your public IP in the EC2 console or by running:
 
-	curl http://169.254.169.254/latest/meta-data/public-ipv4
+	curl http://1xx.2xx.x6x.xx4/latest/meta-data/public-ipv4
 
 Open a Browser
 
